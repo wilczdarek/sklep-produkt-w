@@ -1,0 +1,158 @@
+.products-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.products-table th,
+.products-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.products-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+}
+
+.products-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.products-table td:first-child,
+.products-table th:first-child {
+    padding-left: 20px;
+}
+
+.products-table td:last-child,
+.products-table th:last-child {
+    padding-right: 20px;
+}
+
+.in-stock {
+    color: #27ae60;
+    font-weight: 500;
+}
+
+.out-of-stock {
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+.add-to-cart-btn {
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 0.9em;
+}
+
+.add-to-cart-btn:hover:not(:disabled) {
+    background-color: #2980b9;
+}
+
+.add-to-cart-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.error {
+    text-align: center;
+    padding: 40px;
+    color: #e74c3c;
+    font-size: 1.2em;
+}
+
+/* Responsywność dla małych ekranów */
+@media (max-width: 768px) {
+    .table-container {
+        margin: 0 -20px;
+    }
+    
+    .products-table th,
+    .products-table td {
+        padding: 10px;
+    }
+    
+    .add-to-cart-btn {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+}
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-product-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.add-product-btn:hover {
+    background-color: #2980b9;
+}
+
+.actions-cell {
+    display: flex;
+    gap: 5px;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.edit-btn {
+    background-color: #f39c12;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #d68910;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+} 
